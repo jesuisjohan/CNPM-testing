@@ -4,6 +4,7 @@ try:
     with VL1() as bot:
         bot.land_first_page()
         bot.scroll_to_bottom()
+        bot.go_to_top()
 except Exception as e:
     if 'in PATH' in str(e):
         print(
